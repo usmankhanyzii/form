@@ -1,0 +1,305 @@
+body{
+    font-family:ubunto;
+    margin :30px;
+    background-color:   hsl(231, 100%, 99%);
+}
+/* add class using java script to change color of the empty form error  */
+.color-text {
+    color:red;
+}
+/* toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: none;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* toggle size */
+.toggle{
+    padding-top:10px;
+}
+/* left-sidebar */
+.left-sidebar{
+    background-image: url("D:/webdevelopement/multi-step-form-main/assets/images/bg-sidebar-desktop.svg");
+/* background-position: center; */
+background-repeat: no-repeat;
+height: 95vh;
+/* margin-top: 20px; */
+margin-left:20px;
+width: 274px;
+padding-top: 20px;
+
+}
+
+/* left -sidebar */
+.left-sidebar p{
+    color: hsl(231, 100%, 99%);
+    font-size: 15px;
+    display: block;
+    padding-left: 5rem;
+    position: relative;
+    top:-35px;
+    }
+
+
+/* forms */
+.forms{
+    margin-top: 3.5rem;
+    padding-left: 6rem;
+    
+}
+ .left-sidebar input{
+display: none;
+ }
+ .dot {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    padding:15px 20px;
+    
+    
+ }
+.forms .tabs input{
+    padding: 5px 14rem 5px 0.7rem;
+    margin: 0.2rem 0 ;
+}
+
+.tabs h5{
+    padding: 20px;
+}
+
+button{
+    position: relative;
+    margin-top: 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+    /* background-color: hsl(243, 100%, 62%); */
+    color:white;
+    border: none;
+    
+    
+}
+
+/* page 2 */
+.card img{
+    width: 25%;
+    margin-top:.9rem;
+    background-color:   hsl(231, 100%, 99%);
+}
+.card-text{
+    margin-left:-12px;
+    font-size:15px;
+}
+
+.tabs{
+    display: none;
+    margin-top: 20px;
+
+}
+#tabbs{
+    display: none;
+    color:black;
+    position:absolute;
+    left:35rem;
+    width: 400px;
+    top:15rem;
+}
+.dot.active{
+    background-color: red;
+}
+#nextBtn{
+    position: relative;
+    right:10rem;
+    background-color: hsl(243, 100%, 62%);
+}
+#submit{
+    position: relative;
+    right:10rem;
+    background-color: hsl(243, 100%, 62%);
+    display: none;
+}
+
+#prevBtn{
+    position: relative;
+    margin-left:20rem;
+    color:blue;
+}
+/* mobile screen content  */
+@media (max-width:560px){
+    body{
+        font-family:ubunto;
+        margin :0;
+        background-color:  hsl(229, 24%, 87%);
+    }
+    .left-sidebar{
+        position: absolute;
+        background-image: url("D:/webdevelopement/multi-step-form-main/assets/images/bg-sidebar-mobile.svg");
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    margin: 0;
+    /* padding:0; */
+    text-align: center;
+    left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+    }
+    .left-sidebar p{
+        display: none;
+    }
+
+    .dot {
+        height: 25px;
+        width: 25px;
+        margin: 0 0 0 30px;
+        background-color: #bbbbbb;
+        border: none;  
+        border-radius: 50%;
+        padding:0px 10px;
+        text-align: center;
+        position: relative;
+        left:40px;
+        
+        
+     }
+    /* forms */
+    .forms{
+        margin-top: 0;
+        padding-left:0;
+        padding: 0;     
+    }
+    label{
+        
+        float: left;
+        
+    }
+   
+   .forms .tabs{
+    position: relative;
+    z-index:999;
+    margin:8rem 40px 3rem 40px;
+    background-color: white;
+    border-radius: 10px;
+   }
+    .forms .tabs input{
+        padding:5px 10px;
+    }
+    .tabs h5{
+        padding:0;
+    }
+    .forms .tabs-mbl{
+        padding-left:10px;
+        height: 450px;
+        margin-top: 100px;
+        padding-top: 10px;
+        
+    }
+
+/* button styling */
+#nextBtn{
+    position: relative;
+    right:3rem;
+    background-color: hsl(243, 100%, 62%);
+}
+#prevBtn{
+    position: relative;
+    margin-left:1rem;
+    border-style: none;
+    background-color: none;
+    color: hsl(243, 100%, 62%);
+    border: none;
+}
+}
+/* selecte plan */
+.tabs-mobile{
+    padding-top:10px;
+    padding-left: 20px;
+}
+.card{
+    margin-top: 10px;
+}
+/* adds */
+.tabs-mobiles{
+    padding-top:10px;
+    padding-left: 20px;
+    /* height: 445px; */
+    
+}
+ .fonti{
+    font-size: 12px;
+    margin: 0;
+}
+.cards-add{
+    width: 15rem;
+    height: 6rem;
+}
+.card-texts{
+    margin-bottom:0;
+}
+/* finisht tab */
+.tabs-finish{
+    height: 445px;
+}
+#tabbs{
+    left: 0;
+}
+.image{
+    margin-left:140px;
+}
